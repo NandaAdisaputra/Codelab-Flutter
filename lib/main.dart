@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/column_screen.dart';
+import 'package:flutterbasic/image_screen.dart';
+import 'package:flutterbasic/row_screen.dart';
+import 'package:flutterbasic/textfield_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +17,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
-      home: ColumnScreen(),
+      // home: RowSreen(),
+      initialRoute: '/field',
+      routes: {
+        '/': (context) => MyHomePage(title: "Text"),
+        '/column': (context) => ColumnScreen(),
+        '/row': (context) => RowSreen(),
+        '/image': (context) => ImageScreen(),
+        '/field': (context) => FieldScreen()
+      },
     );
   }
 }
