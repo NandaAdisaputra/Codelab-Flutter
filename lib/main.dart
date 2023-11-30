@@ -5,6 +5,7 @@ import 'package:flutterbasic/dinamis_listview_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/list_builder.dart';
+import 'package:flutterbasic/list_separated.dart';
 import 'package:flutterbasic/list_view.dart';
 import 'package:flutterbasic/row_screen.dart';
 import 'package:flutterbasic/textfield_screen.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/listbuilder',
+      initialRoute: '/listseparated',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
         '/font': (context) => FontScreen(),
         '/listview': (context) => ListScreen(),
         '/dinamislistview': (context) => DinamisListScreen(),
-        '/listbuilder': (context) => ListBuilderScreen()
+        '/listbuilder': (context) => ListBuilderScreen(),
+        '/listseparated': (context) => ListSeparatedScreen()
       },
     );
   }
