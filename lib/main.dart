@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
+import 'package:flutterbasic/dinamis_listview_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/list_view.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/listview',
+      initialRoute: '/dinamislistview',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         '/field': (context) => FieldScreen(),
         '/button': (context) => ButtonScreen(),
         '/font': (context) => FontScreen(),
-        '/listview': (context) => ListScreen()
+        '/listview': (context) => ListScreen(),
+        '/dinamislistview': (context) => DinamisListScreen()
       },
     );
   }
