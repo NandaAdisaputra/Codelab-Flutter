@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/row_screen.dart';
@@ -18,13 +19,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/image',
+      initialRoute: '/button',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
         '/row': (context) => RowSreen(),
         '/image': (context) => ImageScreen(),
-        '/field': (context) => FieldScreen()
+        '/field': (context) => FieldScreen(),
+        '/button': (context) => ButtonScreen()
       },
     );
   }
