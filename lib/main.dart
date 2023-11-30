@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
+import 'package:flutterbasic/font_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/row_screen.dart';
 import 'package:flutterbasic/textfield_screen.dart';
@@ -19,14 +20,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/button',
+      initialRoute: '/font',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
         '/row': (context) => RowSreen(),
         '/image': (context) => ImageScreen(),
         '/field': (context) => FieldScreen(),
-        '/button': (context) => ButtonScreen()
+        '/button': (context) => ButtonScreen(),
+        '/font': (context) => FontScreen()
       },
     );
   }
