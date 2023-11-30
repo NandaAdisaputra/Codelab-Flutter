@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/column_screen.dart';
-import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/row_screen.dart';
 import 'package:flutterbasic/textfield_screen.dart';
 
@@ -23,7 +22,6 @@ class MyApp extends StatelessWidget {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
         '/row': (context) => RowSreen(),
-        '/image': (context) => ImageScreen(),
         '/field': (context) => FieldScreen()
       },
     );
