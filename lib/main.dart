@@ -3,6 +3,7 @@ import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
+import 'package:flutterbasic/list_view.dart';
 import 'package:flutterbasic/row_screen.dart';
 import 'package:flutterbasic/textfield_screen.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/font',
+      initialRoute: '/listview',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         '/image': (context) => ImageScreen(),
         '/field': (context) => FieldScreen(),
         '/button': (context) => ButtonScreen(),
-        '/font': (context) => FontScreen()
+        '/font': (context) => FontScreen(),
+        '/listview': (context) => ListScreen()
       },
     );
   }
