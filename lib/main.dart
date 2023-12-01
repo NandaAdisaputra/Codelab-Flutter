@@ -5,6 +5,7 @@ import 'package:flutterbasic/custom_scroll_view_screen.dart';
 import 'package:flutterbasic/dinamis_listview_screen.dart';
 import 'package:flutterbasic/first_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
+import 'package:flutterbasic/grid_screen.dart';
 import 'package:flutterbasic/image_screen.dart';
 import 'package:flutterbasic/list_builder.dart';
 import 'package:flutterbasic/list_separated.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/customscrollview',
+      initialRoute: '/gridscreen',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
         '/listbuilder': (context) => ListBuilderScreen(),
         '/listseparated': (context) => ListSeparatedScreen(),
         '/firstscreen': (context) => FirstScreen(),
-        '/customscrollview': (context) => CustomScrollViewScreen()
+        '/customscrollview': (context) => CustomScrollViewScreen(),
+        '/gridscreen': (context) => GridScreen()
       },
     );
   }
