@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
+import 'package:flutterbasic/custom_scroll_view_screen.dart';
 import 'package:flutterbasic/dinamis_listview_screen.dart';
 import 'package:flutterbasic/first_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/firstscreen',
+      initialRoute: '/customscrollview',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
         '/dinamislistview': (context) => DinamisListScreen(),
         '/listbuilder': (context) => ListBuilderScreen(),
         '/listseparated': (context) => ListSeparatedScreen(),
-        '/firstscreen': (context) => FirstScreen()
+        '/firstscreen': (context) => FirstScreen(),
+        '/customscrollview': (context) => CustomScrollViewScreen()
       },
     );
   }
