@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/button_screen.dart';
+import 'package:flutterbasic/cardview_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
 import 'package:flutterbasic/custom_scroll_view_screen.dart';
 import 'package:flutterbasic/dinamis_listview_screen.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/expended',
+      initialRoute: '/cardview',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
         '/gridscreen': (context) => GridScreen(),
         '/listbuilderview': (context) => ListViewBuilderScreen(),
         '/listseparatedview': (context) => ListViewSeparatedScreen(),
-        '/expended': (context) => ExpendedScreen()
+        '/expended': (context) => ExpendedScreen(),
+        '/cardview': (context) => CardViewScreen()
       },
     );
   }
