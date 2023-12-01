@@ -3,6 +3,7 @@ import 'package:flutterbasic/button_screen.dart';
 import 'package:flutterbasic/column_screen.dart';
 import 'package:flutterbasic/custom_scroll_view_screen.dart';
 import 'package:flutterbasic/dinamis_listview_screen.dart';
+import 'package:flutterbasic/expended_screen.dart';
 import 'package:flutterbasic/first_screen.dart';
 import 'package:flutterbasic/font_screen.dart';
 import 'package:flutterbasic/grid_screen.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/listseparatedview',
+      initialRoute: '/expended',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -46,7 +47,8 @@ class MyApp extends StatelessWidget {
         '/customscrollview': (context) => CustomScrollViewScreen(),
         '/gridscreen': (context) => GridScreen(),
         '/listbuilderview': (context) => ListViewBuilderScreen(),
-        '/listseparatedview': (context) => ListViewSeparatedScreen()
+        '/listseparatedview': (context) => ListViewSeparatedScreen(),
+        '/expended': (context) => ExpendedScreen()
       },
     );
   }
