@@ -15,6 +15,7 @@ import 'package:flutterbasic/list_view.dart';
 import 'package:flutterbasic/listbuilder.dart';
 import 'package:flutterbasic/listseparated.dart';
 import 'package:flutterbasic/row_screen.dart';
+import 'package:flutterbasic/splash_screen.dart';
 import 'package:flutterbasic/textfield_screen.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       // home: RowSreen(),
-      initialRoute: '/cardview',
+      initialRoute: '/splashscreen',
       routes: {
         '/': (context) => MyHomePage(title: "Text"),
         '/column': (context) => ColumnScreen(),
@@ -50,7 +51,8 @@ class MyApp extends StatelessWidget {
         '/listbuilderview': (context) => ListViewBuilderScreen(),
         '/listseparatedview': (context) => ListViewSeparatedScreen(),
         '/expended': (context) => ExpendedScreen(),
-        '/cardview': (context) => CardViewScreen()
+        '/cardview': (context) => CardViewScreen(),
+        '/splashscreen': (context) => SplashScreen()
       },
     );
   }
