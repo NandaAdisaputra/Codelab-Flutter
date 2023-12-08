@@ -12,7 +12,7 @@ class ImageScreen extends StatelessWidget {
 
       SizedBox(height: 16),
 
-      Center(child: Image( image: AssetImage('assets/images/image_flutter.png'))),
+      Center(child: Image( image: AssetImage('assets/images/image_flutter.png'), width: 200,height: 200,)),
 
       SizedBox(height: 16),
 

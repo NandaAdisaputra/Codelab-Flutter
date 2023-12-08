@@ -55,7 +55,7 @@ class CustomScrollViewScreen extends StatelessWidget {
           width: double.infinity,
           height: 40,
           child: ElevatedButton(
-            onPressed: () {launchUrlStart(url: "https://ftik.usm.ac.id/"); },
+            onPressed: () {launchUrlStart(url: "https://desawisatatawangmangu.com/"); },
             child: Text('Visit Web FTIK USM'),
           ),
         ),
