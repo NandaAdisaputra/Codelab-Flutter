@@ -68,7 +68,10 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Image.network(
-                  'https://ftik.usm.ac.id/wp-content/uploads/2022/12/Favicon-FTIK-USM.png',width: 150, height: 150,),
+                'https://ftik.usm.ac.id/wp-content/uploads/2022/12/Favicon-FTIK-USM.png',
+                width: 150,
+                height: 150,
+              ),
               const SizedBox(
                 height: 20.0,
               ),
@@ -76,10 +79,8 @@ class _LoginPageState extends State<LoginPage> {
                 alignment: Alignment.center,
                 child: Text(
                   'LOGIN',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4!
-                      .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                      color: Colors.black, fontWeight: FontWeight.bold),
                 ),
               ),
               const SizedBox(
@@ -119,17 +120,17 @@ class _LoginPageState extends State<LoginPage> {
                 textAlign: TextAlign.right,
                 style: Theme.of(context)
                     .textTheme
-                    .bodyText2!
+                    .bodyMedium!
                     .copyWith(decoration: TextDecoration.underline),
               ),
               const SizedBox(height: 16),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: isPressed ? Colors.orangeAccent:Colors.deepOrange
-                ),
+                    backgroundColor:
+                        isPressed ? Colors.orangeAccent : Colors.deepOrange),
                 onPressed: () {
                   setState(() {
-                    isPressed = ! isPressed;
+                    isPressed = !isPressed;
                   });
                 },
                 child: const Text(
@@ -155,7 +156,7 @@ class _LoginPageState extends State<LoginPage> {
                         color: Colors.white,
                         child: Text(
                           'atau',
-                          style: Theme.of(context).textTheme.bodyText2,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                     ),
@@ -173,7 +174,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 label: Text(
                   'Masuk dengan Google',
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
               const SizedBox(
@@ -190,7 +191,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 label: Text(
                   'Masuk dengan Facebook',
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
               const SizedBox(height: 8),
@@ -198,7 +199,7 @@ class _LoginPageState extends State<LoginPage> {
                 textAlign: TextAlign.center,
                 text: TextSpan(
                   text: 'Belum punya akun? Ayo ',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                   children: const [
                     TextSpan(
                       text: 'daftar',
@@ -221,7 +222,7 @@ class _LoginPageState extends State<LoginPage> {
                 textAlign: TextAlign.center,
                 text: TextSpan(
                   text: 'Dengan melakukan login, Anda setuju dengan ',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                   children: const [
                     TextSpan(
                       text: 'syarat & ketentuan FTIK USM',
@@ -253,7 +254,7 @@ class MenuTile extends StatelessWidget {
         title,
         style: Theme.of(context)
             .textTheme
-            .bodyText1!
+            .bodyLarge!
             .copyWith(fontWeight: FontWeight.bold),
       ),
       trailing: const Icon(
